@@ -38,7 +38,7 @@ dns:
   bootstrap_dns:
   - 180.76.76.76
   - 114.114.114.114
-  all_servers: true
+  all_servers: false
   fastest_addr: false
   fastest_timeout: 1s
   allowed_clients: []
