@@ -31,6 +31,7 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
+  - '[/tiantang.mogencloud.com/]114.114.114.114'
   - https://dns.pub/dns-query
   - https://dns.alidns.com/dns-query
   - https://doh.360.cn/dns-query
@@ -158,8 +159,7 @@ whitelist_filters:
   name: anti-AD (Whitelist)
   id: 1646618275
 user_rules:
-- '@@||mogencloud.com^$important'
-- '@@||clouddn.com^$important'
+- ""
 dhcp:
   enabled: false
   interface_name: ""
