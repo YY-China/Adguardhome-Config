@@ -157,7 +157,9 @@ whitelist_filters:
   url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/dead-horse@master/anti-ad-white-list.txt
   name: anti-AD (Whitelist)
   id: 1646618275
-user_rules: []
+user_rules:
+- '@@||mogencloud.com^$important'
+- '@@||clouddn.com^$important'
 dhcp:
   enabled: false
   interface_name: ""
