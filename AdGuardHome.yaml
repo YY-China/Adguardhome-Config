@@ -31,6 +31,7 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
+  - '[/cdn.jsdelivr.net/]114.114.114.114'
   - '[/tiantang.mogencloud.com/]114.114.114.114'
   - https://dns.pub/dns-query
   - https://dns.alidns.com/dns-query
