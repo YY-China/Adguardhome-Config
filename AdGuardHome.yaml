@@ -9,7 +9,7 @@ block_auth_min: 15
 http_proxy: ""
 language: ""
 debug_pprof: false
-web_session_ttl: 720
+web_session_ttl: 600
 dns:
   bind_hosts:
   - 0.0.0.0
@@ -27,12 +27,10 @@ dns:
   blocked_response_ttl: 60
   parental_block_host: family-block.dns.adguard.com
   safebrowsing_block_host: standard-block.dns.adguard.com
-  ratelimit: 0
+  ratelimit: 20
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
-  - '[/cdn.jsdelivr.net/]114.114.114.114'
-  - '[/tiantang.mogencloud.com/]114.114.114.114'
   - https://dns.pub/dns-query
   - https://dns.alidns.com/dns-query
   - https://doh.360.cn/dns-query
@@ -60,7 +58,7 @@ dns:
   aaaa_disabled: true
   enable_dnssec: false
   edns_client_subnet: false
-  max_goroutines: 300
+  max_goroutines: 150
   ipset: []
   filtering_enabled: true
   filters_update_interval: 24
