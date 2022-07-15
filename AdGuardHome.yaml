@@ -149,6 +149,7 @@ whitelist_filters:
   id: 1657854243
 user_rules:
 - '||_vlmcs._tcp.lan^$dnsrewrite=NOERROR;SRV;0 100 1688 my.router'
+- '||app.drivereasy.com'
 - '@@||datayi.cn^$important'
 - '@@||launches.appsflyer.com^$important'
 - ""
