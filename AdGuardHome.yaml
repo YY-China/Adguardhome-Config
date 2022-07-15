@@ -32,6 +32,10 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
+  - '[/dhylmr.cn/]223.5.5.5'
+  - '[/dhylmr.com/]223.5.5.5'
+  - '[/xiaoyangzai.work/]223.5.5.5'
+  - '[/xiaoyangzai.xyz/]119.29.29.29'
   - https://dns.pub/dns-query
   - https://dns.alidns.com/dns-query
   - https://doh.360.cn/dns-query
