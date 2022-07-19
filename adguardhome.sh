@@ -269,7 +269,7 @@ fi
 
 dl_adg(){
 logger -t "AdGuardHome" "下载AdGuardHome"
-curl -k -s -o /media/AiDisk_a1/AdGuardHome --connect-timeout 10 --retry 3 https://ghproxy.com/https://raw.githubusercontent.com/YY-China/Adguardhome-Config/main/AdGuardHome
+curl -k -s -o /media/AiDisk_a1/AdGuardHome --connect-timeout 10 --retry 3 https://ghproxy.com/https://github.com/YY-China/Adguardhome-Config/releases/download/Adguardhome/AdGuardHome
 if [ ! -f "/media/AiDisk_a1/AdGuardHome" ]; then
 logger -t "AdGuardHome" "AdGuardHome下载失败，请检查是否能正常访问github!程序将退出。"
 nvram set adg_enable=0
